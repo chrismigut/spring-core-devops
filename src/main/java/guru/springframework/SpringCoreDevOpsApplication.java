@@ -13,5 +13,6 @@ public class SpringCoreDevOpsApplication {
 		// another test...
 		// does jenkins pick up change?
 		// webhook test
+		// artifactory test
 	}
 }

@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.3.8.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -58,7 +58,7 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!--JMS Dep-->
+		<!--JMS Dep -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jms</artifactId>
@@ -75,7 +75,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -84,6 +84,19 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>abe0a79b8048-snapshots</name>
+			<url>http://artifactory.binarybyte.services/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>central</id>
+			<name>abe0a79b8048-releases</name>
+			<url>http://artifactory.binarybyte.services/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
 
 </project>
